@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+
+
+
+    <body>
+        <div class="header">
+            <h1>My Webpage</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Webpage</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="hobbies.html">My Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <button id="red">R</button>
+                <button id="green">G</button>
+                <button id="blue">B</button>
+                <script>
+                    let title = document.querySelector('.header');
+                    document.querySelector('#red').addEventListener('click', function() {
+                        title.style.backgroundColor = 'red';
+                    });
+                    document.querySelector('#green').addEventListener('click', function() {
+                        title.style.backgroundColor = 'green';
+                    });
+                    document.querySelector('#blue').addEventListener('click', function() {
+                        title.style.backgroundColor = '#477bff';
+                    });
+                </script>
+
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="section">
+                <p>
+                <h2>My Hobbies!</h2>
+                </p>
+
+                <p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hobby</th>
+                                <th scope="col">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Football</td>
+                                <td>[...]</td>
+                            </tr>
+                            <tr>
+                                <td>Videogames</td>
+                                <td>[...]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </div>
+
+        <div class="section">
+            <p>
+                <h4>Some Photos of My Hobbies!</h4>
+            </p>
+
+            <img alt="photo of hobby 1" src="example1.png">
+            <img alt="photo of hobby 2" src="example2.png">
+        </div>
+
+        </div>
+
+    </body>
+</html>

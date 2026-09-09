@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stock</th>
+                <th>Purchase/Sale Price</th>
+                <th>Shares Sold/Bought</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(symbol|length) %}
+                <tr>
+                    <td>{{ symbol[i] }}</td>
+                    <td>{{ price[i] }}</td>
+                    <td>{{ shares[i] }}</td>
+                    <td>{{ time[i] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
